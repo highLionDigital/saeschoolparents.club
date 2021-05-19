@@ -1,0 +1,13 @@
+.btn-slack {
+  color: #FFFFFF;
+  background-color: #4A154B;
+  border-color: #4A154B;
+}
+
+.btn-slack:active,
+.btn-slack:hover,
+.btn-slack:focus{
+  color: #4A154B;
+  background-color: #FFFFFF;
+  border-color: #4A154B;
+}

@@ -1,5 +1,13 @@
 require 'sinatra'
 
 get '/' do
-  'It works!'
+  redirect to('/index')
+end
+
+get '/index' do
+  slim :home
+end
+
+get '/form' do
+  slim :form
 end

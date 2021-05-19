@@ -6,5 +6,11 @@ services:
         dockerfile: Dockerfile
     hostname: saeschoolparents
     command: ruby app.rb -o 0.0.0.0
-    ports:
-      - '80:4567'
+    expose:
+      - 4567
+    restart: always
+    environment:
+      VIRTUAL_HOST: saeschoolparents.club
+      LETSENCRYPT_HOST: saeschoolparents.club
+      LETSENCRYPT_EMAIL: admin@highliondigital.com
+    container_name: saeschoolparents

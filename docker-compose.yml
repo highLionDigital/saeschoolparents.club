@@ -14,3 +14,7 @@ services:
       LETSENCRYPT_HOST: saeschoolparents.club
       LETSENCRYPT_EMAIL: admin@highliondigital.com
     container_name: saeschoolparents
+networks:
+  default:
+    external:
+      name: nginx-proxy
